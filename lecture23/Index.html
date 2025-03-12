@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing:border-box;
+            
+        }
+        .container{
+            background-color: beige;
+            height: 600px;
+            width: 1350px;
+            border: 5px solid black;
+            display: flex;
+        }
+        .box1{
+            height:70px ;
+            width:250px ;
+            background-color: blue;
+            border: 3px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+             animation-name: rightMovement;
+            animation-duration: 5s;
+            /* animation-iteration-count: 1; */
+            /* animation-delay: 0s;
+            animation-timing-function: cubic-bezier(0.3,1.0,0.5,0.2); */
+            /* animation-direction: alternate;
+            animation-fill-mode: backwards;  */
+            /* animation: rightMovement 5s linear 0s infinite alternate none; */
+        }
+        @keyframes rightMovement{
+            from{
+              top: 0px;
+              left: 0px;
+            }
+            to{
+              top: 0px;
+              left: 1080px;
+            }
+        }
+        .box2{
+            height:70px ;
+            width:250px ;
+            background-color: blue;
+            border: 3px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-delay: 0s;
+            animation-timing-function: cubic-bezier(0.3,1.0,0.5,0.2);
+            animation-direction: alternate;
+            animation-fill-mode: backwards; 
+            /* animation: leftMovement 5s linear 0s infinite alternate-reverse none; */
+            
+        }
+        @keyframes leftMovement{
+            from{
+              top: 420px;
+              left: 0px;
+            }
+            to{
+              top: 420px;
+              left: 1080px;
+            }
+        }
+        /* .circle{
+            background-color: blue;
+            background-repeat: 2px solid black;
+            height: 40px;
+            width: 40px;
+            justify-content: center;
+            align-items: center;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+        </div>
+        <div class="box2">
+        </div>
+    </div>
+</body>
+</html>

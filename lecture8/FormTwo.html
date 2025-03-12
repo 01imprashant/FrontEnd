@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Job Application</h2>
+    <form>
+
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+
+    <br>
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+
+    <br>
+    <br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" name="phone" id="phone">
+
+    <br>
+    <br>
+
+    <label for="file1">Resume:</label>
+    <input type="file" name="file" id="file1" placeholder="Choose file">
+
+    <br>
+    <label for="number1">Experience(year):</label>
+    <input type="number" name="number" id="number1" min="0" max="50">
+
+    <br>
+    <fieldset>
+        <legend>Skills:</legend>
+        <input type="checkbox" name="checkbox" id="checkbox1">
+        <label for="checkbox1">HTML</label>
+        <input type="checkbox" name="checkbox" id="checkbox2">
+        <label for="checkbox2">CSS</label>
+        <input type="checkbox" name="checkbox" id="checkbox3">
+        <label for="checkbox3">Java Script</label>
+    </fieldset>
+
+    <br>
+    <label for="educationtye1">Highest Education:</label>
+    <select name="educationtype" id="educationtye1">
+        <option value="high school">High School</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="under graduation">Under Graduation</option>
+        <option value="post graduation">Post Graduation</option>
+    </select>
+    
+    <br>
+
+    <fieldset>
+        <legend>Availability:</legend>
+        <label for="radiobutton1">Full Time</label>
+        <input type="radio" name="radiobutton" id="radiobutton1">
+        <label for="radiobutton2">Part Time</label>
+        <input type="radio" name="radiobutton" id="radiobutton2">
+       
+    </fieldset>
+
+    <br>
+
+    <label for="textArea1">Additional comments:</label>
+
+    <br>
+     
+    <textarea name="textarea" id="textArea1" cols="60" rows="10"></textarea>
+
+    <input type="submit" value="Submit Application">
+
+    </form>
+
+
+</body>
+</html>
