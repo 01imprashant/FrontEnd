@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: #9e9e9e;
+            background-image: linear-gradient(160deg, #363739 0%, #322e43 100%);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 800px;
+            height: 400px;
+            background-color: white;
+            display: flex;
+
+        }
+        .contentBox{
+            background-color: purple;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .contentBox h2{
+            padding: 15px;
+            font-size:30px ;
+         }
+         .contentBox p{
+            padding: 20px;
+            font-size: 16px;
+           
+         }
+         .stats{
+            display: flex;
+            justify-content: space-around;
+         }
+         #para1{
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            font-weight: bold;
+         }
+         #para1,#para2{
+            line-height: 10px;
+         }
+
+ 
+         img{
+            width: 50%;
+            height: 100%;
+        } 
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="contentBox">
+
+               <div>
+                <h2>Get insight that help your bussiness grow</h2>
+               </div>
+                
+               <div>
+                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est animi similique earum totam. Deserunt autem quisquam tempora, voluptate sint fuga? Perspiciatis fuga eveniet consequuntur omnisincidunt quasi ut nulla eligendi, autem laboriosam necessitatibus.</p>
+                </div>
+
+                <div class="stats">
+                    <section>
+                        <p id="para1">100K+</p>
+                        <p id="para2">Comments</p>
+                    </section>
+                    <section>
+                        <p id="para1">240+</p>
+                        <p id="para2">Paid Users</p>
+                    </section>
+                    <section>
+                        <p id="para1">100M+</p>
+                        <p id="para2">Views</p>
+                    </section>
+
+                </div>
+
+
+            </div>
+
+            
+           <img src="./images/icon.jpg"/>
+            
+            
+
+        </div>
+
+    </div>
+</body>
+</html>
